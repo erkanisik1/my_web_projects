@@ -1,0 +1,46 @@
+<?php 
+
+class Uye extends Controller{
+	
+	function main(){}
+
+	function yeni_uye(){
+		if (Method::post('uyeform')) {
+
+			$this->Uye_model->kayit(Method::post());
+		}
+		import::view(TEMA.'yeni_uye');
+	}
+
+	function aktivizasyon($d){
+
+		DB::where('rnd',$d)->update('kullanici',['rnd' => '','durum' => '1',]);
+
+		if (DB::affectedRows()) {
+			import::view(TEMA.'finis');
+		}
+
+	}
+
+	function sifremi_unuttum(){
+		if(method::post('login')){
+			$this->uye_model->sifremi_unuttum(method::post());
+		}
+		import::view(TEMA.'sifremi_unuttum');
+	}
+
+	function kontrol_paneli(){
+		if(method::post('urunekle')){
+			$this->urun_model->ekle(method::post());
+			
+		}
+		//output(method::post());
+		$data['bilgi'] = DB::where('kullanici_id',Session::select('uye_id'))->get('kullanici')->row();
+		import::view(TEMA.'kontrol_paneli',$data);
+	}
+
+
+
+
+} 
+?>

@@ -1,0 +1,92 @@
+body{
+	background: #ccc;
+} 
+
+.header{
+	background:#252831;
+	height: 50px;
+}
+
+.logo{
+	color:#fff;
+	line-height: 50px;
+	font-size: 25px;
+}
+
+.ustmenu ul{
+	list-style: none;
+}
+
+.ustmenu ul li{
+	display: table-cell;
+	float: left;
+	padding: 5px;
+	background: #ccc;
+	border:1px solid #252831;
+	border-radius: 5px;
+
+}
+
+.ustmenu ul li a{
+	color: #000;
+}
+
+.table td{
+	font-size: 12px;
+}
+
+.table th{
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle !important;
+	
+}
+thead{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+thead tbody{
+	display: table;
+	
+}
+
+.resim{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.cerceve{
+	border: 1px solid #337AB7;
+	overflow: auto;
+	border-radius: 5px;
+	padding: 5px;
+}
+.baslik{
+	border-bottom: 1px solid #337AB7;
+}
+
+.aciklama{
+	height:100px;
+}
+
+	.bitpazari_blok{
+		border:1px solid #ccc;
+		padding: 5px;
+		float: left;
+		margin-right: 5px;
+	}
+	.bitpazari_blok p{
+		font-size: 12px;
+		color: #000;	
+		margin-top: 0px !important;	
+	}
+
+	.bitpazari_blok img{
+		width: 150px;
+	}

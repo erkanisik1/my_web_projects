@@ -1,0 +1,1 @@
+{"home":"Anasayfa","contact":"İletişim","login":"Üye girişi","logout":"Çıkış","register":"Kayıt Ol","send":"Gönder","search":"Arama","read":"Oku","about":"Hakkımızda","services":"Hizmetlerimiz","older":"Daha Eski","newer":"Daha Yeni","newcontent":"YENİ İÇERİK"}
